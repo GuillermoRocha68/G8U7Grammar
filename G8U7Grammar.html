@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Rocha's Unit 7 Grammar Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+        .correct { border-color: #22c55e !important; background-color: #f0fdf4; }
+        .incorrect { border-color: #ef4444 !important; background-color: #fef2f2; }
+        .feedback-text { font-size: 0.875rem; font-weight: 600; margin-top: 0.25rem; }
+    </style>
+</head>
+<body class="py-10 px-4">
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+        <!-- Header -->
+        <header class="bg-indigo-600 p-8 text-white">
+            <h1 class="text-3xl font-bold mb-2">Mr. Rocha's Unit 7 Grammar Practice</h1>
+            <p class="opacity-90">Practice: make / let / allowed to & used to / get used to</p>
+            
+            <!-- Student Info Fields -->
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider opacity-80 mb-1">Student Name</label>
+                    <input type="text" id="student-name" placeholder="Enter your full name" class="w-full bg-indigo-500/30 border border-indigo-400 rounded-lg p-2 text-white placeholder-indigo-200 focus:outline-none focus:ring-2 focus:ring-white/50">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider opacity-80 mb-1">Date</label>
+                    <input type="date" id="practice-date" class="w-full bg-indigo-500/30 border border-indigo-400 rounded-lg p-2 text-white focus:outline-none focus:ring-2 focus:ring-white/50">
+                </div>
+            </div>
+        </header>
+
+        <main class="p-8 space-y-12">
+            
+            <!-- Section 1 -->
+            <section id="section-1" data-topic="make / let">
+                <h2 class="text-xl font-bold border-b-2 border-indigo-100 pb-2 mb-4">1. Choose the correct option.</h2>
+                <div class="space-y-4">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span>1. My parents</span>
+                        <select class="p-1 border rounded bg-slate-50" data-answer="make">
+                            <option value="">-- select --</option>
+                            <option value="make">make</option>
+                            <option value="let">let</option>
+                        </select>
+                        <span>me clean my room on Saturdays.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span>2. My older brother</span>
+                        <select class="p-1 border rounded bg-slate-50" data-answer="lets">
+                            <option value="">-- select --</option>
+                            <option value="makes">makes</option>
+                            <option value="lets">lets</option>
+                        </select>
+                        <span>me use his computer sometimes.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span>3. I never</span>
+                        <select class="p-1 border rounded bg-slate-50" data-answer="let">
+                            <option value="">-- select --</option>
+                            <option value="make">make</option>
+                            <option value="let">let</option>
+                        </select>
+                        <span>anyone touch my phone.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span>4. My mom doesn’t always</span>
+                        <select class="p-1 border rounded bg-slate-50" data-answer="make">
+                            <option value="">-- select --</option>
+                            <option value="make">make</option>
+                            <option value="let">let</option>
+                        </select>
+                        <span>me finish my vegetables at dinner.</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span>5. Do your parents</span>
+                        <select class="p-1 border rounded bg-slate-50" data-answer="let">
+                            <option value="">-- select --</option>
+                            <option value="make">make</option>
+                            <option value="let">let</option>
+                        </select>
+                        <span>you stay out past midnight on weekends?</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span>6. My best friend</span>
+                        <select class="p-1 border rounded bg-slate-50" data-answer="lets">
+                            <option value="">-- select --</option>
+                            <option value="makes">makes</option>
+                            <option value="lets">lets</option>
+                        </select>
+                        <span>me borrow her clothes.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section id="section-2" data-topic="make / let / allowed to">
+                <h2 class="text-xl font-bold border-b-2 border-indigo-100 pb-2 mb-4">2. Rewrite the sentences. (Change positive to negative / negative to positive)</h2>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-sm text-slate-500 mb-1">Example: They let us go swimming immediately after lunch.</p>
+                        <p class="font-medium text-slate-400 italic mb-2">Ans: They don’t let us go swimming immediately after lunch.</p>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">1. I’m not allowed to be out past 9 p.m.</label>
+                        <input type="text" class="w-full p-2 border rounded" data-answer="I’m allowed to be out past 9 p.m.|I am allowed to be out past 9 p.m.">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">2. They make me do the dishes.</label>
+                        <input type="text" class="w-full p-2 border rounded" data-answer="They don’t make me do the dishes.|They do not make me do the dishes.">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">3. They let me play video games before school.</label>
+                        <input type="text" class="w-full p-2 border rounded" data-answer="They don’t let me play video games before school.|They do not let me play video games before school.">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">4. They don’t make her take care of her little sister.</label>
+                        <input type="text" class="w-full p-2 border rounded" data-answer="They make her take care of her little sister.">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1">5. He’s allowed to hang out with friends on Sunday nights.</label>
+                        <input type="text" class="w-full p-2 border rounded" data-answer="He’s not allowed to hang out with friends on Sunday nights.|He is not allowed to hang out with friends on Sunday nights.">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section id="section-3" data-topic="make / let / allowed to">
+                <h2 class="text-xl font-bold border-b-2 border-indigo-100 pb-2 mb-4">3. Complete the sentences with "make", "let", or "allowed to".</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>1. They make me clean my room. (Example)</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>2. You’re not</span>
+                        <input type="text" class="border-b-2 border-slate-300 focus:border-indigo-500 outline-none w-24 text-center" data-answer="allowed to">
+                        <span>drive without a driver’s license.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>3. He doesn’t</span>
+                        <input type="text" class="border-b-2 border-slate-300 focus:border-indigo-500 outline-none w-24 text-center" data-answer="let">
+                        <span>his baby eat candy.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>4. Are you</span>
+                        <input type="text" class="border-b-2 border-slate-300 focus:border-indigo-500 outline-none w-24 text-center" data-answer="allowed to">
+                        <span>listen to any type of music you want?</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>5. My parents don’t</span>
+                        <input type="text" class="border-b-2 border-slate-300 focus:border-indigo-500 outline-none w-24 text-center" data-answer="let">
+                        <span>me watch certain videos on YouTube.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>6. It’s not fair that they don’t</span>
+                        <input type="text" class="border-b-2 border-slate-300 focus:border-indigo-500 outline-none w-24 text-center" data-answer="make">
+                        <span>my sister do the dishes.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section id="section-4" data-topic="used to">
+                <h2 class="text-xl font-bold border-b-2 border-indigo-100 pb-2 mb-4">4. Match the sentence halves.</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 text-indigo-600 font-bold">1.</span>
+                            <span class="flex-grow">I’ve just moved to the city...</span>
+                            <select class="p-1 border rounded w-16" data-answer="d">
+                                <option value="">-</option>
+                                <option value="a">a</option> <option value="b">b</option> <option value="c">c</option>
+                                <option value="d">d</option> <option value="e">e</option> <option value="f">f</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 text-indigo-600 font-bold">2.</span>
+                            <span class="flex-grow">I’m not used to so much work...</span>
+                            <select class="p-1 border rounded w-16" data-answer="a">
+                                <option value="">-</option>
+                                <option value="a">a</option> <option value="b">b</option> <option value="c">c</option>
+                                <option value="d">d</option> <option value="e">e</option> <option value="f">f</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 text-indigo-600 font-bold">3.</span>
+                            <span class="flex-grow">She’s not used to having...</span>
+                            <select class="p-1 border rounded w-16" data-answer="f">
+                                <option value="">-</option>
+                                <option value="a">a</option> <option value="b">b</option> <option value="c">c</option>
+                                <option value="d">d</option> <option value="e">e</option> <option value="f">f</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 text-indigo-600 font-bold">4.</span>
+                            <span class="flex-grow">I’m not used to having a...</span>
+                            <select class="p-1 border rounded w-16" data-answer="c">
+                                <option value="">-</option>
+                                <option value="a">a</option> <option value="b">b</option> <option value="c">c</option>
+                                <option value="d">d</option> <option value="e">e</option> <option value="f">f</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 text-indigo-600 font-bold">5.</span>
+                            <span class="flex-grow">Now that I’m in college, I have to...</span>
+                            <select class="p-1 border rounded w-16" data-answer="e">
+                                <option value="">-</option>
+                                <option value="a">a</option> <option value="b">b</option> <option value="c">c</option>
+                                <option value="d">d</option> <option value="e">e</option> <option value="f">f</option>
+                            </select>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-4 text-indigo-600 font-bold">6.</span>
+                            <span class="flex-grow">It took me a long time to get used to...</span>
+                            <select class="p-1 border rounded w-16" data-answer="b">
+                                <option value="">-</option>
+                                <option value="a">a</option> <option value="b">b</option> <option value="c">c</option>
+                                <option value="d">d</option> <option value="e">e</option> <option value="f">f</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg space-y-1 text-sm">
+                        <p><strong>a.</strong> at my new job.</p>
+                        <p><strong>b.</strong> the hot summers in Florida.</p>
+                        <p><strong>c.</strong> dog and all the responsibilities it requires.</p>
+                        <p><strong>d.</strong> and I’m getting used to the noise.</p>
+                        <p><strong>e.</strong> get used to making my own meals.</p>
+                        <p><strong>f.</strong> a baby sister.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5 -->
+            <section id="section-5" data-topic="get used to">
+                <h2 class="text-xl font-bold border-b-2 border-indigo-100 pb-2 mb-4">5. Complete with a form of "be" or "get".</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>1. I am used to silence when I study. (Example)</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>2. I immediately</span>
+                        <input type="text" class="border-b-2 border-slate-300 outline-none w-20 text-center" data-answer="got">
+                        <span>used to being the new kid at school.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>3. I</span>
+                        <input type="text" class="border-b-2 border-slate-300 outline-none w-32 text-center" data-answer="have been|'ve been">
+                        <span>used to living abroad for a while now.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>4. I’m still</span>
+                        <input type="text" class="border-b-2 border-slate-300 outline-none w-28 text-center" data-answer="getting">
+                        <span>used to these new shoes.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>5. As soon as I</span>
+                        <input type="text" class="border-b-2 border-slate-300 outline-none w-48 text-center" data-answer="got|had gotten|was">
+                        <span>used to using my new phone, it was stolen.</span>
+                    </div>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <span>6. Unfortunately, the fans</span>
+                        <input type="text" class="border-b-2 border-slate-300 outline-none w-40 text-center" data-answer="are|are getting|have become">
+                        <span>used to their team losing.</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6 -->
+            <section id="section-6" data-topic="Grammar Review">
+                <h2 class="text-xl font-bold border-b-2 border-indigo-100 pb-2 mb-4">6. Correct the mistakes.</h2>
+                <div class="space-y-6">
+                    <div>
+                        <p class="text-sm font-medium">1. He’s not allowed to going to the movies alone.</p>
+                        <input type="text" class="w-full p-2 border rounded mt-1" data-answer="He’s not allowed to go to the movies alone.|He is not allowed to go to the movies alone.">
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">2. I think she let me borrow her car tomorrow.</p>
+                        <input type="text" class="w-full p-2 border rounded mt-1" data-answer="I think she’ll let me borrow her car tomorrow.|I think she will let me borrow her car tomorrow.">
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">3. I’m used to living in a small apartment quickly.</p>
+                        <input type="text" class="w-full p-2 border rounded mt-1" data-answer="I got used to living in a small apartment quickly.">
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">4. I’m not being used to not having a phone.</p>
+                        <input type="text" class="w-full p-2 border rounded mt-1" data-answer="I’m not used to not having a phone.|I am not used to not having a phone.">
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium">5. When I lived in the US, I’m not used to having lunch at noon.</p>
+                        <input type="text" class="w-full p-2 border rounded mt-1" data-answer="When I lived in the US, I wasn’t used to having lunch at noon.|When I lived in the US, I didn’t get used to having lunch at noon.|When I lived in the US, I was not used to having lunch at noon.">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer / Actions -->
+        <footer class="bg-slate-50 p-8 border-t border-slate-200">
+            <div class="flex flex-col items-center gap-4">
+                <button id="check-btn" class="px-8 py-3 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 transition transform active:scale-95">
+                    Check My Answers
+                </button>
+                
+                <div id="score-display" class="hidden w-full bg-white p-6 rounded-xl border border-indigo-100 shadow-inner space-y-4">
+                    <div class="text-center">
+                        <p id="student-display" class="text-lg font-semibold text-slate-700 mb-1"></p>
+                        <p class="text-2xl font-bold text-indigo-700">Result: <span id="score-val">0</span> / <span id="total-val">0</span> (<span id="percentage-val">0</span>%)</p>
+                    </div>
+                    
+                    <div id="recommendations-box" class="p-4 bg-amber-50 rounded-lg border border-amber-200 hidden">
+                        <h3 class="font-bold text-amber-800 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+                            </svg>
+                            Study Recommendations:
+                        </h3>
+                        <ul id="recommendations-list" class="list-disc ml-5 mt-2 text-sm text-amber-900 space-y-1"></ul>
+                    </div>
+                    
+                    <p id="score-comment" class="text-center text-slate-600 italic"></p>
+                </div>
+
+                <button id="reset-btn" class="text-sm text-slate-400 hover:text-slate-600 underline">Reset Worksheet</button>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('check-btn').addEventListener('click', () => {
+            const inputs = document.querySelectorAll('input[data-answer], select[data-answer]');
+            const sections = document.querySelectorAll('section[data-topic]');
+            const name = document.getElementById('student-name').value || "Student";
+            const date = document.getElementById('practice-date').value;
+            
+            let score = 0;
+            let total = inputs.length;
+            let sectionErrors = {};
+
+            // Initialize error tracking for recommendations
+            sections.forEach(s => sectionErrors[s.getAttribute('data-topic')] = 0);
+
+            inputs.forEach(input => {
+                const userVal = input.value.trim().toLowerCase().replace(/[.,'’]/g, "'");
+                const possibleAnswers = input.getAttribute('data-answer').toLowerCase().split('|').map(a => a.trim().replace(/[.,'’]/g, "'"));
+                
+                // Track section for recommendations
+                const parentSection = input.closest('section');
+                const topic = parentSection ? parentSection.getAttribute('data-topic') : null;
+
+                // Remove existing feedback
+                const existingFeedback = input.parentNode.querySelector('.feedback-text');
+                if (existingFeedback) existingFeedback.remove();
+
+                const isCorrect = possibleAnswers.includes(userVal);
+
+                if (isCorrect) {
+                    score++;
+                    input.classList.add('correct');
+                    input.classList.remove('incorrect');
+                } else {
+                    input.classList.add('incorrect');
+                    input.classList.remove('correct');
+                    if (topic) sectionErrors[topic]++;
+                    
+                    // Add correction text for visibility
+                    if (input.tagName === 'INPUT' || input.tagName === 'SELECT') {
+                        const fb = document.createElement('div');
+                        fb.className = 'feedback-text text-red-500';
+                        fb.innerText = "Correct: " + input.getAttribute('data-answer').split('|')[0];
+                        input.parentNode.appendChild(fb);
+                    }
+                }
+            });
+
+            // Display Score
+            const scoreDisplay = document.getElementById('score-display');
+            const studentDisplay = document.getElementById('student-display');
+            const scoreVal = document.getElementById('score-val');
+            const totalVal = document.getElementById('total-val');
+            const percentVal = document.getElementById('percentage-val');
+            const scoreComment = document.getElementById('score-comment');
+            
+            scoreDisplay.classList.remove('hidden');
+            studentDisplay.innerText = name + (date ? ` — ${date}` : "");
+            scoreVal.innerText = score;
+            totalVal.innerText = total;
+            
+            const percentage = Math.round((score / total) * 100);
+            percentVal.innerText = percentage;
+
+            // Handle Recommendations
+            const recBox = document.getElementById('recommendations-box');
+            const recList = document.getElementById('recommendations-list');
+            recList.innerHTML = "";
+            let hasRecommendations = false;
+
+            if (sectionErrors["make / let"] > 0 || sectionErrors["make / let / allowed to"] > 0) {
+                const li = document.createElement('li');
+                li.innerText = "Review the differences between 'make' (force), 'let' (permission), and 'be allowed to' (passive permission).";
+                recList.appendChild(li);
+                hasRecommendations = true;
+            }
+            if (sectionErrors["used to"] > 0 || sectionErrors["get used to"] > 0) {
+                const li = document.createElement('li');
+                li.innerText = "Practice 'be used to' (state of familiarity) versus 'get used to' (the process of becoming familiar).";
+                recList.appendChild(li);
+                hasRecommendations = true;
+            }
+            if (sectionErrors["Grammar Review"] > 2) {
+                const li = document.createElement('li');
+                li.innerText = "Focus on sentence structure: remember that 'let/make' use the base form (no 'to'), while 'allowed to' requires the infinitive.";
+                recList.appendChild(li);
+                hasRecommendations = true;
+            }
+
+            if (hasRecommendations && percentage < 100) {
+                recBox.classList.remove('hidden');
+            } else {
+                recBox.classList.add('hidden');
+            }
+
+            if (percentage === 100) scoreComment.innerText = "Perfect score! You've mastered these topics.";
+            else if (percentage >= 80) scoreComment.innerText = "Great job! Just a few minor errors to review.";
+            else if (percentage >= 50) scoreComment.innerText = "Good effort. Take a look at the recommendations below.";
+            else scoreComment.innerText = "Keep practicing! Review the grammar notes for this unit.";
+
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+
+        document.getElementById('reset-btn').addEventListener('click', () => {
+            if (confirm("Clear all your answers and start over?")) {
+                location.reload();
+            }
+        });
+    </script>
+</body>
+</html>
